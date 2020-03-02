@@ -7,9 +7,8 @@ public class ShowTree extends JFrame {
 
     private JTree tree;
 
-    public ShowTree()
+    public ShowTree(BinaryTree bt)
     {
-        BinaryTree bt = new BinaryTree();
         Random rnd = new Random();
         for (int i=0; i<100; i++) {
             bt.add(rnd.nextInt(200) - 100);
@@ -30,12 +29,12 @@ public class ShowTree extends JFrame {
 
     public static void main(String[] args)
     {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new ShowTree();
-            }
-        });
+//        SwingUtilities.invokeLater(new Runnable() {
+//            @Override
+//            public void run() {
+//                new ShowTree();
+//            }
+//        });
     }
 
 }
